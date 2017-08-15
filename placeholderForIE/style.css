@@ -1,0 +1,108 @@
+﻿@charset "utf-8";
+/*RESET*/
+body,header,nav,section,article,dialog,figure,aside,footer,fieldset,h1,h2,p{display:block;margin:0;padding:0;zoom:1;}
+article,aside,figure,footer,header,hgroup,nav,section{display:block;}
+nav ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+img{border:none; outline:none;}
+a{ text-decoration:none; outline:none;}
+fieldset { border:none;}
+noscript { display:block;}
+
+/*COMMON*/
+.clearfix { clear:both;}
+.cls{ zoom:1;}
+.cls:after{clear:both; content:''; display:block; height:0; visibility:hidden;}
+.fl{ float:left;}
+.fr{ float:right;}
+.mb5 { margin-bottom:5px;}
+.mb24 { margin-bottom:24px;}
+.mb15 { margin-bottom:15px;}
+
+/*PUBLIC*/
+body { font-family:Arial, Helvetica, sans-serif; background-color:#A3C660;}
+.bg { position:fixed; left:0px; top:0px; z-index:-999; width:100%; height:100%;}/*optional*/
+.container{ position:relative; width:800px; margin:0 auto 50px auto; background-color:#fff;}
+	.siteHeader>h1{ width:100%; height:40px; background-color:#5F3E2F; font:12px/18px;}
+	.siteHeader>h1>a { display:block; width:100%; height:40px; background:url(http://www.xoedge.com/sweepstakes/destination-maternity-gift-card/3_82/header.jpg) left no-repeat; text-indent:-9999999px;}
+	.content{ position:relative; padding-bottom:50px;}
+		.titleBox { position:relative; widows:100%; height:130px; background:url(http://www.xoedge.com/sweepstakes/destination-maternity-gift-card/3_82/headline.png) center no-repeat;}
+		.titleBox .title {}
+		.titleBox .title>h1 { text-indent:-99999em;}
+		.titleBox .title>h2 {}
+		.side { width:50%; max-width:400px; text-align:center;}
+		.main { width:45%; max-width:315px; margin-left:50px;}
+
+/*SHARE BOX*/
+.shareBox { margin:8px 0 0 2px; width: 70px;}
+.shareBox a { display:block; width:25px; height:25px; float:left; margin-right:8px; background-size:contain;}
+	.share_fb { background:url(http://www.xoedge.com/sweepstakes/destination-maternity-gift-card/3_82/facebook.gif) center no-repeat;}
+	.share_tt { background:url(http://www.xoedge.com/sweepstakes/destination-maternity-gift-card/3_82/twitter.gif) center no-repeat;}
+	.twitter-share-button{ height: 25px !important; width: 25px !important; margin-left: -32px; opacity: 0; filter: alpha(opacity=0); z-index: 999999;}
+.entryShare,.thankShare { position:absolute; right:10px; top:10px;}
+.thankShare {}
+
+/*ENTRY FROM*/
+.grid { width:47.5%;}
+.grid_all { width:100%;}
+.gZip { width:27.5%;}
+.gState { width:16.5%; margin-left:5%;}
+.gBrith { margin-bottom:5px;}
+.gSubmit { font-size:10px; text-align:right; margin-top: 10px; }
+.gRule { text-align:right; font:9px/13px Helvetica; color:#333; margin:5px 0;}
+.gRule a { color:#333; text-decoration:underline;}
+
+.entryFields { margin-top:20px;}
+.entryFields fieldset { margin-bottom:5px;}
+.entryFields fieldset label { display:block; font-size:11px; text-indent:1px; color:#333;}
+.entryFields fieldset input[type=text] { display:block; border:1px solid #797979; font-size:11px; line-height:16px; height:18px; width:100%; text-indent:2px; box-sizing:border-box;}
+.entryFields fieldset select { border:1px solid #797979; font-size:9px; height:20px; vertical-align:top;}
+label[for="phone"]:after { content:"  (We'll only call you if you win!)"}
+a#submit { display:inline-block; width:108px;}
+a#submit img { max-width:100%;}
+.optIns input[type=checkbox] { float:left;}
+.optIns label { margin-left:30px;}
+/*input#submit { background:url(images/submit.gif) center no-repeat; background-size:contain; width:110px; height:34px; text-indent:9999999px; border:none; cursor:pointer;}*/
+
+/*ERROR INFO*/
+p.errInfo{color:#ff0000 !important;font-size: 9px !important;line-height:12px !important; margin:0 !important;}
+
+/*****PAGE THANK*****/
+h1#promptMsg { height:28px; margin:12px 0; font-weight:normal;}
+.thank { font:12px/22px Helvetica,Arial; color:#000; min-height:326px; margin-bottom:50px;}
+.thank p strong { font:bold 16px/18px Helvetica; color:#9ecf48; margin-top:30px;}
+.thank h2 { font:bold 15px/18px Helvetica; color:#747474; margin-top:24px;}
+.thank>a { display:block; margin-top:24px;}
+.link_submit { display:block; margin-top:14px;}
+/*PAGE ENTRY*/
+.entry p { font:12px/14px Helvetica; color:#000;}
+.entry p strong { font:bold 16px/18px Helvetica; color:#9ecf48;}
+
+
+/*****FOR MORE DEVICE*****/
+@media screen and (max-width:800px){
+    .bg { display:none;}
+	.container { width:100%; margin-bottom:0;}
+	.side {width:50%;}
+	.side img { max-width:100%;}
+	.main { margin-left:20px; width:46%;}
+	.titleBox { background-size:75%;}
+}
+@media screen and (max-width:720px){
+	
+}
+@media screen and (max-width:640px){
+	.content { min-width:220px; width:95%; margin:0 auto; margin-top:20px;}
+	.titleBox { background-size:100%;}
+	.side,.main { width:100%; float:none; margin:0 auto; padding-top:20px;}
+	.side img[alt=mainImg] { display:none;}
+}
+@media screen and (max-width:480px){
+	.content { padding:0;}
+}
+@media screen and (max-width:240px){
+	
+}
+
+.placeholderStyle { position: absolute; font-size: 11px; line-height: 18px; color:red; /* color: #A9A9A9; */ text-indent: 5px;}

@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>不支持placeholder的模拟</title>
+<link rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.xoedge.com/jscripts/shared/modernizr-2.0.6.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+<section class="entry main fl">
+			<form id="sweepsFields" name="sweepsFields" method="post" action="./" class="cls entryFields">
+				<fieldset class="grid fl">
+					<label for="firstName">First Name</label>
+					<input id="firstName" name="firstName" type="text" required maxlength="50">
+				</fieldset>
+				<fieldset class="grid fr">
+					<label for="lastName">Last Name</label>
+					<input id="lastName" name="lastName" type="text" required maxlength="50">
+				</fieldset>
+				<fieldset class="grid_all clearfix">
+					<label for="address1">Address 1</label>
+					<input id="address1" name="address1" type="text" required maxlength="100">
+				</fieldset>
+				<fieldset class="grid_all clearfix">
+					<label for="address2">Address 2</label>
+					<input id="address2" name="address2" type="text" maxlength="100">
+				</fieldset>
+				<fieldset class="grid fl">
+					<label for="city">City</label>
+					<input id="city" name="city" type="text" required maxlength="100">
+				</fieldset>
+				<fieldset class="gState fl">
+					<label for="state">State</label>
+					<select id="state" name="state" required >
+						<option value=""></option>
+						<option value="AL">AL</option>
+						<option value="AK">AK</option>
+						<option value="AZ">AZ</option>
+						<option value="AR">AR</option>
+						<option value="CA">CA</option>
+						<option value="CO">CO</option>
+						<option value="CT">CT</option>
+						<option value="DE">DE</option>
+						<option value="DC">DC</option>
+						<option value="FL">FL</option>
+						<option value="GA">GA</option>
+						<option value="HI">HI</option>
+						<option value="ID">ID</option>
+						<option value="IL">IL</option>
+						<option value="IN">IN</option>
+						<option value="IA">IA</option>
+						<option value="KS">KS</option>
+						<option value="KY">KY</option>
+						<option value="LA">LA</option>
+						<option value="ME">ME</option>
+						<option value="MD">MD</option>
+						<option value="MA">MA</option>
+						<option value="MI">MI</option>
+						<option value="MN">MN</option>
+						<option value="MS">MS</option>
+						<option value="MO">MO</option>
+						<option value="MT">MT</option>
+						<option value="NE">NE</option>
+						<option value="NV">NV</option>
+						<option value="NH">NH</option>
+						<option value="NJ">NJ</option>
+						<option value="NM">NM</option>
+						<option value="NY">NY</option>
+						<option value="NC">NC</option>
+						<option value="ND">ND</option>
+						<option value="OH">OH</option>
+						<option value="OK">OK</option>
+						<option value="OR">OR</option>
+						<option value="PA">PA</option>
+						<option value="RI">RI</option>
+						<option value="SC">SC</option>
+						<option value="SD">SD</option>
+						<option value="TN">TN</option>
+						<option value="TX">TX</option>
+						<option value="UT">UT</option>
+						<option value="VT">VT</option>
+						<option value="VA">VA</option>
+						<option value="WA">WA</option>
+						<option value="WV">WV</option>
+						<option value="WI">WI</option>
+						<option value="WY">WY</option>
+					</select>
+				</fieldset>
+				<fieldset class="gZip fr">
+					<label for="zip">ZIP Code</label>
+					<input id="zip" name="zip" type="text" required maxlength="10" placeholder="Ex. 12345">
+				</fieldset>
+				<fieldset class="grid_all">
+					<label for="email">Email</label>
+					<input id="email" name="email" type="text" required>
+				</fieldset>
+				<fieldset class="grid_all">
+					<label for="phone">Phone Number</label>
+					<input id="phone" name="phone" type="text" required maxlength="20" placeholder="Ex. 123-456-7890">
+				</fieldset>
+				<div class="grid fl">
+					<fieldset class="cls">
+						<label for="birthDate">Birth Date</label>
+						<input id="birthDate" name="birthDate" type="text" required maxlength="10" placeholder="Ex. 11/11/1111">
+					</fieldset>
+					<fieldset class="cls">
+						<label for="dueDate">Due Date</label>
+						<input id="dueDate" name="birthDate" type="text" maxlength="10" placeholder="Ex. 11/11/1111">
+					</fieldset>
+				</div>
+				<div class="grid fr">
+					<fieldset class="gRule cls">
+						<p>No purchase necessary</p>
+						<a id="sweepsRules" target="_blank" href="http://images.thebump.com/sweeps/tb-dm-giftcard-giveaway.pdf">See official rules</a>
+					</fieldset>
+					<fieldset class="gSubmit cls">
+						<!--<input type="button" value="submit" class="gSubmit" id="submit" />-->
+						<a id="submit" href="#"><img src="http://www.xoedge.com/sweepstakes/destination-maternity-gift-card/3_82/button.gif" alt="submit"></a>
+					</fieldset>
+				</div>
+				<fieldset class="optIns grid_all clearfix">
+					<input id="optInEmail_tb" name="metaData" type="checkbox" value="Yes! I want to receive pregnancy and parenting news, weekly updates, tips and promotions from The Bump!" checked>
+					<label for="metaData">Yes! I want to receive pregnancy and parenting news, weekly updates, tips and promotions from The Bump!</label>
+				</fieldset>
+				<fieldset class="optIns grid_all clearfix">
+					<input id="optInEmail_dm" name="metaData" type="checkbox" value="Yes! I want to receive the latest news, promotions, free samples, coupons, discounts and offers from Destination Maternity and their preferred partners." checked>
+					<label for="metaData">Yes! I want to receive the latest news, promotions, free samples, coupons, discounts and offers from Destination Maternity and their preferred partners.</label>
+				</fieldset>
+			</form>
+
+		</section>
+
+		<!-- <img src="xxx" onerror="alert(1);} function hi() { alert(2); " /> -->
+</body>
+</html>
